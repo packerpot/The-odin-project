@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Inconsolata;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site_logo {
+    max-height: 100px;
+    padding: 10px;
+}
+
+.nav_bar {
+    list-style: none;
+    display: flex;
+    background-color: #a2dfcd;
+    color: rgb(109 28 118);
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.nav_one li {
+    display: inline-block;
+}
+
+.nav_one a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav_home,
+.nav_aboutus,
+.nav_receipe,
+.nav_contactus {
+    padding: 30px 10px;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav_search {
+    padding: 6px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.search_btn {
+    width: 55px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav_login,
+.nav_signup {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 800;
+gap: 10;
+}
