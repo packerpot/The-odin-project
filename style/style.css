@@ -1,75 +1,628 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Balsamiq+Sans&display=swap');
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Inconsolata;
+
 }
 
-a {
-    text-decoration: none;
-}
-
-.site_logo {
-    max-height: 100px;
-    padding: 10px;
-}
+/*navigation  styling part*/
 
 .nav_bar {
-    list-style: none;
     display: flex;
-    background-color: #a2dfcd;
-    color: rgb(109 28 118);
-    align-items: stretch;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgb(17, 16, 16);
+    font-family: Patua One;
 }
 
-.nav_one li {
-    display: inline-block;
+.nav_one {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav_one a {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    color: black;
 }
 
 .nav_one a:hover {
-    color: rgb(255, 255, 255);
+    color: pink;
 }
 
-.nav_home,
-.nav_aboutus,
-.nav_receipe,
-.nav_contactus {
-    padding: 30px 10px;
-    margin: 5px;
-    font-size: 30px;
-    font-weight: 600;
+.right_hand {
+    display: flex;
+    align-self: center;
+    list-style: none;
 }
 
 .nav_search {
-    padding: 6px;
-    margin: 5px;
-    border-radius: 10px;
-    border-color: transparent;
-    font-size: 15px;
-    font-weight: 700;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+    border-radius: 5px;
 }
 
-.search_btn {
-    width: 55px;
-    height: 35px;
-    border-radius: 10px;
-    border-color: transparent;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
+.search_btn,
+.nav_login,
+.nav_signup {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .nav_login,
 .nav_signup {
+    background-color: rgba(174, 187, 231, 0.514);
+    color: black;
+}
+
+.right_hand a:hover {
+    color: white;
+}
+
+.main_head {
+    display: flex;
+}
+
+.site_logo {
+    width: 100px;
+}
+
+/*content styling part*/
+
+.main_head {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Fredoka One;
+}
+
+.dish_row_one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: Fredoka One;
+}
+
+.dish_row_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    font-family: Fredoka One;
+}
+
+
+.dish_row_one img,
+.dish_row_two img {
+    width: 300px;
+}
+
+.dish_one,
+.dish_two,
+.dish_three,
+.dish_four,
+.dish_five,
+.dish_six {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dish_one a,
+.dish_two a,
+.dish_three a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.dish_four a,
+.dish_five a,
+.dish_six a {
+    font-size: 20px;
+    font-weight: bold;
     padding: 10px;
     margin: 10px;
-    border: 2px solid;
-    border-radius: 20px;
+}
+
+main a {
+    color: black;
+}
+
+.dish_one p,
+.dish_two p,
+.dish_three p,
+.dish_four p,
+.dish_five p,
+.dish_six p {
+    text-align: center;
+    margin: 0 90px;
+    opacity: 0.4;
+    font-size: 15px;
+    font-family: Comfortaa;
+}
+
+.dish_one:hover {
+    box-shadow: 0px 10px 20px black;
+}
+
+.dish_two:hover {
+    box-shadow: 0px 10px 20px black;
+}
+
+.dish_three:hover {
+    box-shadow: 0px 10px 20px black;
+}
+
+.dish_four:hover {
+    box-shadow: 5px 10px 20px black;
+}
+
+.dish_five:hover {
+    box-shadow: 5px 10px 20px black;
+}
+
+.dish_six:hover {
+    box-shadow: 5px 10px 20px black;
+}
+
+
+/*innerindex(A,B,C,D,E,F) styling*/
+
+.site_logo img {
+    width: 100px;
+}
+
+.diet {
+    display: flex;
+    flex-direction: column;
+}
+
+.diet img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px;
+}
+
+.descrip {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.descrip h1 {
+    align-self: self-start;
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    font-family: Balsamiq Sans;
+}
+
+.descrip p {
     font-size: 20px;
-    font-weight: 800;
-gap: 10;
+    text-align: left;
+    margin: 16px;
+    font-family: Comfortaa;
+}
+
+.make_pros {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.make_pros h2 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    font-family: Balsamiq Sans;
+}
+
+.make_pros ul {
+    list-style: square;
+    margin: 20px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: Unbounded;
+}
+
+.make_pros span {
+    opacity: 0.5;
+}
+
+.make_instru {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.make_instru h2,
+h3 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    font-family: Balsamiq Sans;
+}
+
+.make_instru ol {
+    margin: 0 30px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: Unbounded;
+}
+
+
+/*login page styling*/
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #9EDCFF;
+
+}
+
+.home img {
+    box-shadow: 0 10px 10px black;
+    background: white;
+    border-radius: 40px;
+}
+
+
+.login_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background: #9EDCFF;
+}
+
+.form_ctxt {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: auto;
+    box-shadow: 5px 5px 20px 5px black;
+    background: white;
+    border-radius: 5px;
+}
+
+.form_head {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.user_name {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    align-items: self-start;
+}
+
+.user_name label {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.user_name input {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.key_area {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    align-items: self-start;
+}
+
+.key_area label {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.key_area input {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.key_area a {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.login_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.login_btn button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    font-family: Patua One;
+}
+
+.another_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+}
+
+.another_one a:hover {
+    text-decoration: underline;
+}
+
+.key_area a:hover {
+    text-decoration: underline;
+}
+
+
+/*signup form styling*/
+
+.signup_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background: #9EDCFF;
+}
+
+.form_txt {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    box-shadow: 0 10px 20px black;
+    background: white;
+    border-radius: 5px;
+}
+
+.Sup_form_head {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    align-items: self-start;
+}
+
+.name label {
+    font-size: 20px;
+    padding: 4px;
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.name input {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.name_mail_id {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    align-items: self-start;
+}
+
+.name_mail_id label {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.name_mail_id input {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.key_enter {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    align-items: self-start;
+}
+
+.key_enter label {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+
+}
+
+.key_enter input {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.cnf_key {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    align-items: self-start;
+
+}
+
+.cnf_key label {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.cnf_key input {
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin: 0 5px;
+
+}
+
+.signup_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.signup_btn button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: Patua One;
+}
+
+.return_bck {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.return_bck a:hover {
+    text-decoration: underline;
+}
+
+/* footer styling*/
+
+.cover {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 30px 5px 5px 5px black;
+}
+
+.section_a {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+
+}
+
+.section_b {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+}
+
+.lower_head {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Fredoka One;
+    margin: 5px;
+}
+
+.high_low {
+    margin: 5px;
+    font-family: Fredoka One;
+}
+
+.high_low h5 {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.high_low p {
+    text-align: center;
+    align-items: center;
+    font-size: 17px;
+    margin: 0 15px;
+    font-family: Comfortaa;
+}
+
+.high_flt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    font-size: 17px;
+    margin: 0 20px;
+    font-family: Comfortaa;
+}
+
+.lower_out {
+    padding: 10px;
+    font-size: 17px;
+    margin: 0 20px;
+    font-family: Fredoka One;
+}
+
+.lower_out span {
+    margin: 20px;
+    font-family: Comfortaa;
 }
