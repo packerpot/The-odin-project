@@ -5,46 +5,124 @@
     <title>The ordin Receipes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="content\site logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="content/site logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
+
+    <!--navigation part-->
+
     <nav class="nav_bar">
-        <a href="index.html"><img src="content\site logo.png" class="site_logo" alt="website logo"></a>
+        <div class="left_hand">
+            <a href="index.html"><img src="content/site logo.png" class="site_logo" alt="website logo"></a>
+        </div>
         <ul class="nav_one">
             <li class="nav_home">
                 <a href="index.html">Home</a>
             </li>
             <li class="nav_aboutus">
-                <a href="">About us</a>
+                <a href="#footer">About us</a>
             </li>
             <li class="nav_receipe">
                 <a href="">Receipes</a>
             </li>
             <li class="nav_contactus">
-                <a href="">Contact us</a>
+                <a href="#footer">Contact us</a>
             </li>
-            <input class="nav_search" type="text" placeholder="search">
+        </ul>
+        <div class="right_hand">
+            <input class="nav_search" type="text" placeholder="Find Your Receipes">
             <button class="search_btn" type="submit">Go</button>
+
             <li class="nav_login">
-                <a href="">Log in</a>
+                <a href="loginindex.html">Log in</a>
             </li>
             <li class="nav_signup">
-                <a href="">Sign up</a>
+                <a href="signupindex.html">Sign up</a>
             </li>
+
+        </div>
     </nav>
-     <main>
-        <h1>The ordin Receipes</h1>
-        <ul>
-            <li><a href="indian dishes/aloomatar.html">Aloo Matar</a></li>
-            <li><a href="indian dishes/korma.html">Veg-Korma</a></li>
-            <li><a href="indian dishes\NavratanKorma.html">Navratan Korma</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+
+    <!--content part-->
+
+    <main>
+        <div class="main_head">
+            <h1>The odin Receipes</h1>
+        </div>
+        <div class="dish_row_one">
+            <div class="dish_one">
+                <a href="innerindexB.html"><img src="content/aloo-mutter.jpg" alt="aloo aloo-mutter"></a>
+                <a href="innerindexB.html">Aloo Matar</a>
+                <p>Here is a delightful dish - potatoes and peas in a tomato puree sauce. It's pretty easy to rustle up,
+                    and adds zing to any meal.</p>
+            </div>
+            <div class="dish_two">
+                <a href="innerindexD.html"><img src="content/Veg-Korma.png" alt="veg korma"></a>
+                <a href="innerindexD.html">Veg-Korma</a>
+                <p>This vegetable korma recipe is an easy vegetarian curry. It's rich, creamy, mildly spiced, and
+                    extremely flavorful.</p>
+            </div>
+            <div class="dish_three">
+                <a href="innerindexE.html"><img src="content/Navratan-korma.png" alt="navratan korma"></a>
+                <a href="innerindexE.html">Navratan Korma</a>
+                <p>This navratan korma recipe is an Indian vegetable curry with nuts, paneer cheese, and an adjustable
+                    list of vegetables.</p>
+            </div>
+        </div>
+
+        <div class="dish_row_two">
+            <div class="dish_four">
+                <a href="innerindexC.html"><img src="content/dalmakhani.png" alt="dal makhani"></a>
+                <a href="innerindexC.html">Dal Makhani</a>
+                <p>Punjabi Dal Makhani finds a place in almost all Indian restaurant menus.It is a staple in every
+                    punjabi household as well.</p>
+            </div>
+            <div class="dish_five">
+                <a href="innerindexA.html"><img src="content/Aloo-Jeera.png" alt="Aloo Jeera"></a>
+                <a href="innerindexA.html">Aloo Jeera</a>
+                <p>all time favorite aloo recipe. Jeera aloo is a versatile dish.It goes excellently very well with
+                    any kind dal,curry or kadhi.</p>
+            </div>
+            <div class="dish_six">
+                <a href="innerindexF.html"><img src="content/palak-paneer.png" alt="Palak Paneer"></a>
+                <a href="innerindexF.html">Palak Paneer</a>
+                <p>Palak paneer has a ubiquitious presence on every Indian restaurant menu.Punjabi’s love their palak
+                    paneer.</p>
+            </div>
+        </div>
     </main>
+    <footer id="footer">
+        <div class="cover">
+            <div class="section_a">
+                <div class="lower_head">
+                    <h4>About</h4>
+                </div>
+                <div class="high_low">
+                    <h5>Who we are?</h>
+                        <p>"We are learners who make mistakes and improve them day by day to become better."</p>
+                </div>
+            </div>
+            <div>
+                <div class="high_flt">
+                    <p class="lower_head">!</p>
+                    <p>Note* 'This project is based on my current learning and practice; you may find errors and
+                        mistakes.'</p>
+                </div>
+            </div>
+            <div class="section_b">
+                <div class="lower_head">
+                    <h4>Contact us</h4>
+                </div>
+                <div class="lower_out">
+                    <P>mail: <span>###@dish.com</span></P>
+                    <P>Address: <span>###</span></P>
+                    <p>phone no. <span>###</span></P>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
